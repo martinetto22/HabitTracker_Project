@@ -72,7 +72,7 @@ INSERT INTO DailyHabits (ID_O, daily_habits) VALUES (1, '''Study 1h''');
 INSERT INTO DailyHabits (ID_O, daily_habits) VALUES (2, '''Study 1h''');
 INSERT INTO DailyHabits (ID_O, daily_habits) VALUES (3, '''Do not procrastinate daily tasks''');
 
-/*Guardem les dates en les que s'''han complert o no els habits diaris
+/*We keep the dates on which the daily habits have been fulfilled (or not).*/
 HABIT 1 */
 INSERT INTO DailyHabitsACHIEVED (ID_DH, username, Data, YES_NO) VALUES (1, '''marti''', '''2022-07-12''', '''yes''');
 INSERT INTO DailyHabitsACHIEVED (ID_DH, username, Data, YES_NO) VALUES (1, '''marti''', '''2022-07-13''', '''yes''');
@@ -120,12 +120,12 @@ INSERT INTO DailyHabitsACHIEVED (ID_DH, username, Data, YES_NO) VALUES (3, '''ma
 INSERT INTO DailyHabitsACHIEVED (ID_DH, username, Data, YES_NO) VALUES (3, '''marti''', '''2022-07-24''', '''yes''');
 
 
-/*CREACIO DELS WEEKLY HABIT*/
+/*WEEKLY HABITS creation*/
 INSERT INTO WeeklyHabits (ID_O, weekly_habits) VALUES (1, '''Review the weekly agenda''');
 INSERT INTO WeeklyHabits (ID_O, weekly_habits) VALUES (2, '''Staying motivated to learn''');
 INSERT INTO WeeklyHabits (ID_O, weekly_habits) VALUES (3, '''Be sure that I have all weekly tasks completed.''');
 
-/*Guardem les dates en les que s'''han complert o no els habits setmanals*/
+/*We keep the dates on which the weekly habits have been fulfilled (or not).*/
 INSERT INTO WeeklyHabitsACHIEVED (ID_WH, username, Data, YES_NO) VALUES (1, '''marti''', '''2022-07-17''', '''yes''');
 /*INSERT INTO WeeklyHabitsACHIEVED (ID_WH, username, Data, YES_NO) VALUES (1, '''marti''', '''2022-07-24''', '''yes''');*/
 INSERT INTO WeeklyHabitsACHIEVED (ID_WH, username, Data, YES_NO) VALUES (2, '''marti''', '''2022-07-17''', '''yes''');
