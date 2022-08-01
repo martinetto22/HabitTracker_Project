@@ -59,8 +59,8 @@ def registre(cur):
 
             print(identifier_O[0][0])
 
-            obj.define_dailyHabits(cur, identifier_O[0][0])
-            obj.define_weeklyHabits(cur, identifier_O[0][0])
+            obj.define_register_dailyHabits(cur, identifier_O[0][0])
+            obj.define_register_weeklyHabits(cur, identifier_O[0][0])
 
         else:
             print("At least one objective should be created at a later date.")

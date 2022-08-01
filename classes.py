@@ -51,7 +51,7 @@ class Estadistiques:
             final_dates_list.append(date2)
 
         fig = plt.figure(figsize=[11, 4], facecolor="LightSalmon", edgecolor="#2E8B57", linewidth=10)
-        plt.title('Dates inici', fontsize=16)
+        plt.title('Starting dates', fontsize=16)
         plt.plot_date(inicial_dates_list, y)
         plt.tight_layout()
         plt.xlabel("Date(month-day)",
@@ -65,7 +65,7 @@ class Estadistiques:
         plt.show()
 
         fig = plt.figure(figsize=[11, 4], facecolor="LightSalmon", edgecolor="#2E8B57", linewidth=10)
-        plt.title('Dates final', fontsize=16)
+        plt.title('Final dates', fontsize=16)
         plt.plot_date(final_dates_list, y)
         plt.tight_layout()
         plt.xlabel("Date(year-month)",
@@ -354,6 +354,28 @@ class DailyHabits:
     Class to define the functions that a daily habit has.
     '''
 
+    def define_register_dailyHabits(self, cur, identifier_O):
+        '''
+        This function is used to enter by keyboard the daily habits necessary for a specific objective during the sign up process.
+
+        Arguments:
+            identifier_O(string) - Target identifier.
+            cur(pymysql.cursors.Cursor) - Cursor to perform SQL queries.
+
+        Returns:
+            It does not return anything, it enters in the database the habits we have defined for the objective.
+        '''
+
+        while True:
+            habit = input("Introduce the daily habits you need to achieve your goal:")
+            cur.execute('INSERT INTO DailyHabits (ID_O, daily_habits) VALUES '
+                        '("%s", "%s")', (identifier_O, habit))
+            cur.connection.commit()
+            mes_habits = input("Do you need to add more daily habits?")
+            if mes_habits != "yes":
+                break
+
+
     def define_dailyHabits(self, cur, identifier_O):
 
         '''
@@ -369,7 +391,6 @@ class DailyHabits:
 
         cur.execute('SELECT daily_habits, ID_DH FROM DailyHabits WHERE ID_O LIKE ("%s")', (identifier_O))
         d_hab = cur.fetchall()
-        print(d_hab)
 
         if len(d_hab) == 0:
             print(colored('There are no objectives with this ID.', 'red'))
@@ -472,6 +493,29 @@ class WeeklyHabits:
     '''
     Class to define the functions that a weekly habit has.
     '''
+
+    def define_register_weeklyHabits(self, cur, identifier_O):
+        '''
+        This function is used to enter by keyboard the weekly habits necessary for a specific objective during the sign up process.
+
+        Arguments:
+        identifier_O(string) - Target identifier.
+        cur(pymysql.cursors.Cursor) - Cursor to perform SQL queries.
+
+        Returns:
+        It does not return anything, it enters in the database the weekly habits we have defined for the objective.
+        '''
+
+        while True:
+            habit = input("Introduce the weekly habits you need to achieve your goal:")
+            cur.execute('INSERT INTO WeeklyHabits (ID_O, weekly_habits) VALUES '
+                        '("%s", "%s")', (identifier_O, habit))
+            cur.connection.commit()
+
+            mes_habits = input("Do you need to add more weekly habits?")
+            if mes_habits != "yes":
+                break
+
 
     def define_weeklyHabits(self, cur, identifier_O):
 

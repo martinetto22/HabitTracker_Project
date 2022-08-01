@@ -73,7 +73,7 @@ INSERT INTO DailyHabits (ID_O, daily_habits) VALUES (2, '''Study 1h''');
 INSERT INTO DailyHabits (ID_O, daily_habits) VALUES (3, '''Do not procrastinate daily tasks''');
 
 /*We keep the dates on which the daily habits have been fulfilled (or not).*/
-HABIT 1 */
+/*HABIT 1 */
 INSERT INTO DailyHabitsACHIEVED (ID_DH, username, Data, YES_NO) VALUES (1, '''marti''', '''2022-07-12''', '''yes''');
 INSERT INTO DailyHabitsACHIEVED (ID_DH, username, Data, YES_NO) VALUES (1, '''marti''', '''2022-07-13''', '''yes''');
 INSERT INTO DailyHabitsACHIEVED (ID_DH, username, Data, YES_NO) VALUES (1, '''marti''', '''2022-07-14''', '''yes''');
@@ -86,7 +86,7 @@ INSERT INTO DailyHabitsACHIEVED (ID_DH, username, Data, YES_NO) VALUES (1, '''ma
 INSERT INTO DailyHabitsACHIEVED (ID_DH, username, Data, YES_NO) VALUES (1, '''marti''', '''2022-07-21''', '''yes''');
 INSERT INTO DailyHabitsACHIEVED (ID_DH, username, Data, YES_NO) VALUES (1, '''marti''', '''2022-07-22''', '''yes''');
 INSERT INTO DailyHabitsACHIEVED (ID_DH, username, Data, YES_NO) VALUES (1, '''marti''', '''2022-07-23''', '''yes''');
-/*INSERT INTO DailyHabitsACHIEVED (ID_DH, username, Data, YES_NO) VALUES (1, '''marti''', '''2022-07-24''', '''no''');*/
+INSERT INTO DailyHabitsACHIEVED (ID_DH, username, Data, YES_NO) VALUES (1, '''marti''', '''2022-07-24''', '''no''');
 
 /*HABIT 2*/
 INSERT INTO DailyHabitsACHIEVED (ID_DH, username, Data, YES_NO) VALUES (2, '''marti''', '''2022-07-12''', '''yes''');
@@ -127,8 +127,8 @@ INSERT INTO WeeklyHabits (ID_O, weekly_habits) VALUES (3, '''Be sure that I have
 
 /*We keep the dates on which the weekly habits have been fulfilled (or not).*/
 INSERT INTO WeeklyHabitsACHIEVED (ID_WH, username, Data, YES_NO) VALUES (1, '''marti''', '''2022-07-17''', '''yes''');
-/*INSERT INTO WeeklyHabitsACHIEVED (ID_WH, username, Data, YES_NO) VALUES (1, '''marti''', '''2022-07-24''', '''yes''');*/
+INSERT INTO WeeklyHabitsACHIEVED (ID_WH, username, Data, YES_NO) VALUES (1, '''marti''', '''2022-07-24''', '''yes''');
 INSERT INTO WeeklyHabitsACHIEVED (ID_WH, username, Data, YES_NO) VALUES (2, '''marti''', '''2022-07-17''', '''yes''');
-/*INSERT INTO WeeklyHabitsACHIEVED (ID_WH, username, Data, YES_NO) VALUES (2, '''marti''', '''2022-07-24''', '''no''');*/
+INSERT INTO WeeklyHabitsACHIEVED (ID_WH, username, Data, YES_NO) VALUES (2, '''marti''', '''2022-07-24''', '''no''');
 INSERT INTO WeeklyHabitsACHIEVED (ID_WH, username, Data, YES_NO) VALUES (3, '''marti''', '''2022-07-17''', '''no''');
-/*INSERT INTO WeeklyHabitsACHIEVED (ID_WH, username, Data, YES_NO) VALUES (3, '''marti''', '''2022-07-24''', '''yes''');*/
+INSERT INTO WeeklyHabitsACHIEVED (ID_WH, username, Data, YES_NO) VALUES (3, '''marti''', '''2022-07-24''', '''yes''');
