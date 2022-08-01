@@ -4,6 +4,6 @@ The project consists of a program that records the objectives that a user has se
 
 The program will keep track of the days that the daily habits have been fulfilled (the same with the weekly habits) and will display simple statistics that will allow a better analysis of the user's behavior (to facilitate its improvement).
 
-##Starting
+## Starting
 
-###Prerequisites
+### Prerequisites
