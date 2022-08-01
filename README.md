@@ -10,7 +10,14 @@ The program will keep track of the days that the daily habits have been fulfille
 For the execution of the program it will be necessary to have installed a SQL database manager (for example mySQL) and any IDE with which you can execute python code (it is not necessary to install any IDE, being able to execute python code through terminal would be enough, although it is advisable to install an IDE such as PyCharm).
 
 ### Installation 🔧
-This program has been developed with PyCharm so I will discuss how to install the different libraries from PyCharm. When importing a library we will see the following:
+This program has been developed with PyCharm so I will discuss how to install the different libraries from PyCharm. 
+First of all we must install PyCharm in our PC (in my case with linux operating system) that with linux, we only have to introduce the following script:
+
+*sudo snap install pycharm-community --classic*
+
+After executing the script in the terminal, you will be asked to enter the root user password, and once you enter it, the program will start installing.
+
+Once we have PyCharm installed, the process to install the libraries required for the proper functioning of the program is very simple. When we are missing some of the libraries we will see the following:
 
 ![image](https://user-images.githubusercontent.com/110245293/182176958-c4922e03-a84b-4134-8b2d-3f2d3a97b674.png)
 
