@@ -123,6 +123,13 @@ Once we are registered we can enter the application:
 
 This is how the table looks like in the case of the user Judith that we have just created.
 
+
+
+📌
+So far we have seen how the programme works. There are still many things that could be improved that due to time constraints I have not been able to address. In any case, this first version can be used for the realisation of a more ambitious project since the basic functionalities are already implemented and although there are probably things that can be done to optimise the code, if we start a project with everything that it already has, we will save a lot of work.
+
+
+
 ## Built with 🛠️
 
 * [PyCharm](https://www.jetbrains.com/pycharm/) - IDE used
