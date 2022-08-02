@@ -7,7 +7,7 @@ The program will keep track of the days that the daily habits have been fulfille
 ## Starting 🚀
 
 ### Prerequisites 📋
-For the execution of the program it will be necessary to have installed a SQL database manager (for example mySQL) and any IDE with which you can execute python code (it is not necessary to install any IDE, being able to execute python code through terminal would be enough, although it is advisable to install an IDE such as PyCharm).
+For the execution of the program it will be necessary to have installed a SQL database manager (for example MySQL) and any IDE with which you can execute python code (it is not necessary to install any IDE, being able to execute python code through terminal would be enough, although it is advisable to install an IDE such as PyCharm).
 
 ### Installation 🔧
 This program has been developed with PyCharm so I will discuss how to install the different libraries from PyCharm. 
